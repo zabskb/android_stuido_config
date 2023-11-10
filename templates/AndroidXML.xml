@@ -1,0 +1,9 @@
+<templateSet group="AndroidXML">
+  <template name="c" value="&lt;!-- $des$ --&gt;" description="xml中的注释文案" toReformat="false" toShortenFQNames="true">
+    <variable name="des" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+</templateSet>

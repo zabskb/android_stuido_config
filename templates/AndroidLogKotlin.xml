@@ -1,0 +1,25 @@
+<templateSet group="AndroidLogKotlin">
+  <template name="loguik" value="com.bynav.mower.utils.LogUtils.i(&quot;$TAG$&quot;, &quot;$METHOD_NAME$: $content$&quot;)" description="LogUtils.i(TAG, String)" toReformat="true" toShortenFQNames="true">
+    <variable name="TAG" expression="kotlinClassName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="METHOD_NAME" expression="kotlinFunctionName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logudk" value="com.bynav.mower.utils.LogUtils.d(TAG, &quot;$METHOD_NAME$: $content$&quot;)" description="LogUtils.d(TAG, String)" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="kotlinFunctionName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="loguek" value="com.bynav.mower.utils.LogUtils.e(TAG, &quot;$METHOD_NAME$: $content$&quot;, $exception$)" description="LogUtilse(TAG, String, Exception)" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="kotlinFunctionName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="exception" expression="" defaultValue="e" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
